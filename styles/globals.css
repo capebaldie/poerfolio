@@ -1,26 +1,135 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Hide scrollbar for Chrome, Safari and Opera */
+.smooth-transition {
+  transition: all 0.3s ease-in-out;
+}
+body {
+  background-color: rgb(10, 25, 47);
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dc2f02;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-strike-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-strike-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 24px;
+  top: 0;
+  left: 0;
+  background-color: rgb(10, 25, 47);
+  transform-origin: bottom right;
+  transition: transform 0.7s ease-out;
+}
+
+.hover-strike-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link {
+  cursor: pointer;
+  height: 2rem;
+  width: auto;
+  color: rgb(246, 246, 246);
+  transition: 200ms ease-in-out;
+}
+
+.link:hover {
+  transform: translateY(-0.1em);
+}
+
+.text-green {
+  text-shadow: 1px 1px 1px #fffdfd, 1px 1px 1px #ffffff, 1px 1px 1px #ffffff,
+    1px 2px 1px #fffdfd;
+}
+.text {
+  text-shadow: 1px 1px 1px #10c02a, 1px 1px 1px #17c85b, 1px 1px 1px #11cc7e,
+    1px 2px 1px #24d36d;
+}
+body {
+  overflow: auto;
+}
+body::-webkit-scrollbar {
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.slide {
+  animation: Slide_Up 1.4s ease;
+}
+.diva {
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, #e65100 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-in-out;
+}
+.diva:hover {
+  background-position: left;
+}
+
+.border {
+  border-style: solid;
+  border-color: #64ffda;
+  color: rgb(219, 219, 219);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.border:hover {
+  transform: translateY(-0.3em);
+  box-shadow: 3px 3px 1px 1px rgb(5, 9, 16);
+  color: #64ffda;
+}
+.scales {
+  transition: transform ease-in-out 0.3s;
+}
+.scales:hover {
+  transform: translateY(-0.3em);
+}
+
+.connect {
+  border-radius: 51% 49% 54% 46% / 51% 34% 66% 49%;
+}
+@media screen and (min-width: 1024px) {
+  .margin {
+    box-shadow: #64ffda 6px 6px, rgb(21, 201, 45) 12px 12px;
+    transition: ease-out 0.4s;
   }
-  body {
-    color: white;
-    background: black;
+
+  .margin:hover {
+    transform: translateY(-0.3em);
+    box-shadow: #64ffda 8px 8px, rgb(21, 201, 45) 16px 16px;
   }
 }
