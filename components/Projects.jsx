@@ -38,7 +38,7 @@ const Projects = () => {
             />
             <h1 className="text-white/80 my-3">Amazon clone</h1>
             <div className="flex justify-between items-center">
-              <a href="amzn-clone-ten.vercel.app" target="_blank">
+              <a href="https://amzn-clone-ten.vercel.app/" target="_blank">
                 <p className="border px-4">demo</p>
               </a>
               <a
