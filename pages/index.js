@@ -1,6 +1,7 @@
 import Head from "next/head";
 import AboutMe from "../components/AboutMe";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import MainPage from "../components/MainPage";
 import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
@@ -16,11 +17,12 @@ export default function Home() {
 
       <main className="">
         <NavBar />
-        <MainPage />
+        <MainPage className="reveal" />
         <AboutMe />
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
       </main>
     </div>
   );

@@ -69,11 +69,10 @@ body {
   transform: translateY(-0.1em);
 }
 
-.text-green {
-  text-shadow: 1px 1px 1px #fffdfd, 1px 1px 1px #ffffff, 1px 1px 1px #ffffff,
-    1px 2px 1px #fffdfd;
-}
 .text {
+  transition: ease-in-out 0.2s;
+}
+.text:hover {
   text-shadow: 1px 1px 1px #10c02a, 1px 1px 1px #17c85b, 1px 1px 1px #11cc7e,
     1px 2px 1px #24d36d;
 }

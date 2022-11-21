@@ -11,7 +11,10 @@ const NavBar = () => {
       <div className="flex flex-row items-center justify-between sm:h-16 h-20 bg-[#0a192f]">
         <div>
           <h1 className="text-3xl ml-4 font-bold hover-underline-animation hover:text-green-400 ease-in-out duration-300 text-white">
-            <span className="text-green-400">P</span>ortfolio.
+            <a href="#home">
+              {" "}
+              <span className="text-green-400">P</span>ortfolio.
+            </a>
           </h1>
         </div>
         <div>
@@ -61,31 +64,41 @@ const NavBar = () => {
           mobileMenu ? "left-0" : "-left-full"
         }`}
       >
-        <ul className="sm:hidden flex flex-col items-center justify-center w-full h-screen text-3xl -mt-6">
+        <ul className="sm:hidden flex flex-col items-center justify-center w-full h-screen gap-y-5 text-3xl">
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#home">
-            <li className="my-2 text-white text underline-offset-8 hover-underline-animation">
-              <span className="text-green-400 text-green">H</span>ome.
+            <li className="my-2 text-white text underline-offset-8 ">
+              <span className="text-green-400 text-green font-bold">H</span>
+              ome.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#about">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green">A</span>bout Me.
+              <span className="text-green-400 text-green font-bold">A</span>bout
+              Me.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#skills">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green">S</span>kills.
+              <span className="text-green-400 text-green  font-bold">S</span>
+              kills.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#projects">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green">P</span>rojects.
+              <span className="text-green-400 text-green font-bold">P</span>
+              rojects.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#contact">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green">C</span>ontact Me.
+              <span className="text-green-400 text-green font-bold">C</span>
+              ontact Me.
             </li>
+          </a>
+          <a href="amal-a.s.pdf" download="amal-a.s.pdf">
+            <p className="border border-green-400 px-2 py-[0.20rem] rounded-sm hover:bg-[#64ffda] hover:text-[#0a192f]">
+              Resume
+            </p>
           </a>
         </ul>
       </div>

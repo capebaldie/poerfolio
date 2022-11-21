@@ -65,7 +65,7 @@ const Skills = () => {
             <p className="sm:text-3xl text-xl">Tailwind</p>
           </div>
 
-          <div className="flex justify-between items-center bg-[#112240] px-3 py-1 rounded-md border">
+          <div className="flex justify-between items-center bg-[#112240] px-3 py-1 rounded-md border text-center">
             <img
               className="w-20  sm:w-20"
               src="https://img.icons8.com/color/512/bootstrap.png"

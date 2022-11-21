@@ -6,7 +6,7 @@ const AboutMe = () => {
       className="sm:flex flex-row justify-between w-full lg:h-screen slide"
     >
       <div className="flex flex-col max-w-[1240px] w-full h-full mx-auto p-6 justify-center items-center ">
-        <h1 className="text text-5xl text-white my-5 font-bold mb-10">
+        <h1 className="text text-5xl text-white my-5 font-bold mb-10 ">
           About <span className="text-green text-green-400">me.</span>
         </h1>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 sm:px-10">
