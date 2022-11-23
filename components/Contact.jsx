@@ -89,7 +89,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="name"
-                  className="focus:outline-none bg-[#0a192f] h-10 px-2 my-3 w-full rounded-md placeholder:text-blue-600"
+                  className="focus:outline-none bg-[#0a192f] h-10 px-2 my-3 w-full rounded-md placeholder:text-blue-300"
                 />
                 {<p className="text-red-600">{formErrors.name}</p>}
                 <input
@@ -98,7 +98,7 @@ const Contact = () => {
                   type="text"
                   name="email"
                   placeholder="e-mail"
-                  className="focus:outline-none bg-[#0a192f] h-10 px-2 my-3 w-full rounded-md placeholder:text-blue-600"
+                  className="focus:outline-none bg-[#0a192f] h-10 px-2 my-3 w-full rounded-md placeholder:text-blue-300"
                 />
                 {<p className="text-red-600">{formErrors.email}</p>}
                 <input
@@ -107,7 +107,7 @@ const Contact = () => {
                   type="text"
                   name="subject"
                   placeholder="subject"
-                  className="focus:outline-none bg-[#0a192f] h-10 px-2 my-3 w-full rounded-md placeholder:text-blue-600"
+                  className="focus:outline-none bg-[#0a192f] h-10 px-2 my-3 w-full rounded-md placeholder:text-blue-300"
                 />
                 {<p className="text-red-600">{formErrors.subject}</p>}
                 <textarea
@@ -117,12 +117,12 @@ const Contact = () => {
                   id=""
                   rows="5"
                   placeholder="message"
-                  className="focus:outline-none bg-[#0a192f] px-2 my-2 py-2 w-full rounded-lg placeholder:text-blue-600"
+                  className="focus:outline-none bg-[#0a192f] px-2 my-2 py-2 w-full rounded-lg placeholder:text-blue-300"
                 ></textarea>
                 {<p className="text-red-600">{formErrors.message}</p>}
                 <button
                   type="submit"
-                  className="w-full bg-green-400/90 mt-4 py-2 rounded-md"
+                  className="w-full text-white text-lg sm:text-xl bg-green-400/90 mt-4 py-2 rounded-md"
                 >
                   submit
                 </button>

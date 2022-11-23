@@ -4,10 +4,10 @@ const Projects = () => {
   return (
     <div id="projects" className="w-full slide">
       <div className="flex flex-col max-w-[1240px] w-full mx-auto p-4 justify-center items-center">
-        <h1 className="text-green text-4xl text-green-400 mt-16 mb-8 font-bold">
+        <h1 className="text-green text-5xl text-green-400 mt-16 mb-10 font-bold">
           My <span className="text text-white">Projects</span>
         </h1>
-        <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="flex flex-col bg-[#112240] p-4 rounded-lg hover:shadow-xl scales">
             <img
               src="netflix.png"

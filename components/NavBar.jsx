@@ -64,39 +64,49 @@ const NavBar = () => {
           mobileMenu ? "left-0" : "-left-full"
         }`}
       >
-        <ul className="sm:hidden flex flex-col items-center justify-center w-full h-screen gap-y-5 text-3xl">
+        <ul className="sm:hidden flex flex-col items-center justify-center w-full h-screen gap-y-4 text-3xl font-bold -mt-20">
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#home">
             <li className="my-2 text-white text underline-offset-8 ">
-              <span className="text-green-400 text-green font-bold">H</span>
+              <span className="text-green-400 text-green font-extrabold">
+                H
+              </span>
               ome.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#about">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green font-bold">A</span>bout
-              Me.
+              <span className="text-green-400 text-green font-extrabold">
+                A
+              </span>
+              bout Me.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#skills">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green  font-bold">S</span>
+              <span className="text-green-400 text-green  font-extrabold">
+                S
+              </span>
               kills.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#projects">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green font-bold">P</span>
+              <span className="text-green-400 text-green font-extrabold">
+                P
+              </span>
               rojects.
             </li>
           </a>
           <a onClick={() => setMobileMenu(!mobileMenu)} href="#contact">
             <li className="my-2 text-white text">
-              <span className="text-green-400 text-green font-bold">C</span>
+              <span className="text-green-400 text-green font-extrabold">
+                C
+              </span>
               ontact Me.
             </li>
           </a>
           <a href="amal-a.s.pdf" download="amal-a.s.pdf">
-            <p className="border border-green-400 px-2 py-[0.20rem] rounded-sm hover:bg-[#64ffda] hover:text-[#0a192f]">
+            <p className="border border-green-400 px-2 py-[0.20rem] rounded-sm">
               Resume
             </p>
           </a>
