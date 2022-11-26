@@ -37,7 +37,7 @@ const MainPage = () => {
             <a href="mailto:amalsunil863@gmail.com">
               <TbMail className="link hover:text-[#64ffda]" />
             </a>
-            <a href="amal-a.s.pdf" download="amal-a.s.pdf">
+            <a href="Amal-a-s.pdf" download="Amal-a-s.pdf">
               <p className="hidden sm:inline border border-green-400 px-2 py-[0.20rem] rounded-sm hover:bg-[#64ffda] hover:text-[#0a192f] link">
                 Resume
               </p>

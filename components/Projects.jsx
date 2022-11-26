@@ -49,6 +49,25 @@ const Projects = () => {
               </a>
             </div>
           </div>
+          <div className="flex flex-col bg-[#112240] p-4 rounded-lg hover:shadow-xl scales">
+            <img
+              src="budget.png"
+              className="w-[20rem] rounded-md opacity-80"
+              alt=""
+            />
+            <h1 className="text-white/80 my-3">Budget Tracker</h1>
+            <div className="flex justify-between items-center">
+              <a href="https://budget-tracker-ten.vercel.app" target="_blank">
+                <p className="border px-4">demo</p>
+              </a>
+              <a
+                href="https://github.com/capebaldie/budget-tracker"
+                target="_blank"
+              >
+                <p className="border px-4">code</p>
+              </a>
+            </div>
+          </div>
 
           <div className="flex flex-col bg-[#112240] p-4 rounded-lg hover:shadow-xl scales">
             <img src="todo.png" className="w-[20rem] rounded-md" alt="" />
